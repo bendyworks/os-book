@@ -1,0 +1,13 @@
+* OS Book
+  A few Bendyworkers are reading through the 8th edition of [[http://www.amazon.com/Operating-System-Concepts-Abraham-Silberschatz/dp/1118063333/ref=tmm_hrd_title_0][Operating System
+  Concepts]]. This is where we're tracking our work.
+** Guidelines
+   - Store the work in whatever format you like. It should be easy for others to
+     read and comment on.
+   - Commit however you like, depending on how we're planning on doing
+     exercise + code review we should eventually standardize, but for the first
+     few chapters it might be good to try a few different approaches best.
+   - Let others know if you're having troubles, for instance, consider:
+     - Opening a pull request for a really hard exercise or program
+     - Asking someone to change formats or help you set up your editor if you're
+       having trouble reading whatever format their exercises/code is in.
