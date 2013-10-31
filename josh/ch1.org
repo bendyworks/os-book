@@ -1,0 +1,65 @@
+Note: This is unfinished.  I'll try to finish it up this weekend or next week (<2013-10-30 Wed>)
+* Exercises
+  1. The three main purposes of an os:
+     1. Manage hardware
+     2. Provide a base where apps can run
+     3. Provide an interface to the user
+  2. OSs for mainframes are more concerned with resource management while OSs
+     for consumer use are more concerned with usability (generally speaking).
+  3. The four steps needed to start a single-process OS:
+     1. A bootstrap program
+     2. A Kernel
+     3.
+  4.
+  5. In a real-time environemnt you _must_ conform to the fixed time
+     constraints.
+  6. Argument for OSs including things like web browsers:
+     - You could bake things like security in, look at ChromeOS' secure boot
+     Argument for OSs not including things like web browsers:
+     - This is outside the scope of an OS, and will take precious time and focus
+       away from OS developers.
+  7. In kernel mode you can run privileged instructions (which might access the
+     hardware). In user mode, you can request that things be run with higher
+     privileges, or run things that don't need higher privileges.
+  8. Which of the following should be privileged? (p: privileged)
+     1. (p) set the value of a timer
+     2. read the clock
+     3. clear memory (ambiguous)
+     4. (p) issue a trap instruction
+     5. (p) turn off inturrupts
+     6. (p) modify entries in device-status table
+     7. (p) switch from user to kernel mode
+     8. (p) access I/O device
+  9. Possible difficulties from loading the OS from ROM:
+     1. Difficult to update
+     2. More difficult to upgrade hardware
+  10.
+  11. If you know how much time elapses in one tick of the CPU you can just
+      count the ticks to track time.
+  12. The internet is a WAN
+  13. Security issues from multiprogramming/time-sharing environments:
+      1. What are two?
+         1. Data leakage
+         2. Abuse of resources (CPU time, disk, swap, etc)
+      2. Can we ensure the same degree of security in a time-shared machine as a
+         dedicated machine?
+         1. No, because if one user can escalate their own privileges, they can
+            access more resources/data.
+  14. What resources are most scarce in the following systems:
+      1. mainframes/minicomputers:
+         1. processing time
+      2. workstations connected to servers:
+         1. network usage
+      3. handheld computers:
+         1. network usage
+         2. storage
+  15. Under what circumstances would a user be better using a time-sharing
+      system than a single-user workstation? A: When it's their job and they
+      don't have to pay for the time-sharing system.
+  16. Which of the below need to be supported by the OS for (a) handhelds and
+      (b) realtime devices (couldn't we make devices for either category that
+      use all three?):
+      1. (b) batch programming
+      2. (a) virtual memory
+      3. (b) time sharing
+  17.
