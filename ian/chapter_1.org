@@ -1,0 +1,143 @@
+* Notes
+
+  * NUMA :: Non-uniform memory access
+
+    * UMA :: Uniform memory access
+
+  * Clustered Systems
+
+    * Different from multiprocessor systems because they consist of two or more individual systems (or nodes)
+
+  * Variable Timer
+
+    * Set counter and decrement each time the clock ticks
+      When the counter reaches 0, an interrupt is triggered
+
+    * 10-bit counter with 1 ms clock allows for intervuls at intervals from 1 ms to 1,024 ms
+
+  * Process Management
+
+    * Operating system is responsible for:
+
+      - Scheduling processes and threads
+
+      - Creating & deleting (both) user & system processes
+
+      - Suspending/resuming processes
+
+      - Providing mechanisms for process synchronization
+
+      - Providing mechanicisms for process communication
+
+  * Memory Management
+
+    * Operating system is responsible for:
+
+      - Knowing which parts of memory are in use and which are free
+
+      - Knowing which processes are using which parts of memory
+
+      - Deciding which processes & data to move into/out of memory
+
+      - Allocating/deallocating memory
+
+  * Storage Management
+
+    *
+
+* Practice Exercises
+
+  1. What are the three main purposes of an operating system?
+
+     - Manage resources (hardware, etc.)
+
+     - Manage processes
+
+     -
+
+  2. What are the main differences between operating systems for mainframe computers and personal computers?
+
+     - Mainframes are concerned with efficiency and resource management
+
+     - Personal computers focus on UX
+
+  3. List the four steps that are necessary to run a program on a completely dedicated machine -- a computer that is running only that program.
+
+     -
+
+     -
+
+     -
+
+     -
+
+  4. When is it appropriate for the operating system to forsake this principle and to "waste" resources?
+     Why is such a system not really wasteful?
+
+     __
+
+  5. What is the main difficulty that programmer must overcome in writing an operating system for a real time environment?
+
+     - Limited memory
+
+     - UX (response time)
+
+  6. Argument for OSs including applications (web browsers, mail programs, etc.):
+
+     - Performance improvements in the applications by tightly coupling them to the operating system
+
+     - Less work for the user after installing OS
+
+     -
+
+     Argument against OSs including applications:
+
+     - Operatings systems should only care about UX so much as they schedule processes fairly and efficiently
+
+     - Some operating systems are targetted at people who will *never* need applications
+
+     - Applications often introduce vulnerabilities, OSs have enough to worry about regardless of the security of the applications
+
+  7. How does the distinction between kernel/user modes function as a crude security system?
+
+     When processes are run in kernel mode they are given elevated privileges.
+     When they're run in user mode they're allowed to request elevated privileges but are only granted them for the system call.
+
+  8. Which of the following should be privileged?
+
+     - [X] Set the value of the timer
+
+     - [ ] Read the clock
+
+     - [X] Clear memory
+
+     - [X] Issue a trap instruction
+
+     - [X] Turn off interrupts
+
+     - [X] Modify entries in device-status table
+
+     - [X] Switch from user to kernel mode
+
+     - [ ] Access I/O device
+
+  9. Two difficulties with placing the OS in a memory partition that could not be modified by either the user job or the OS itself
+
+     - Difficult for OS to update itself
+
+     - Difficult to install additional modules to handle extensions
+
+  10. Uses of multiple modes
+
+      - Allowing processes to run on a different level from the user level
+
+	Protect user level processes from other processes while still not giving either elevated privileges
+
+      -
+
+  11. How could timers be used to calculate the current time?
+
+      When the clock process is started an interrupt could be set to be raised every 1000 ms (assuming a 1 ms clock).
+      More generally, the clock could trigger an interrupt every 1000ms/x where x is the time of the clock
+
+  12. The internet is a WAN
