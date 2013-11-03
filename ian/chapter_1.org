@@ -53,7 +53,7 @@
 
      - Manage processes
 
-     -
+     - Manage memory
 
   2. What are the main differences between operating systems for mainframe computers and personal computers?
 
@@ -141,3 +141,18 @@
       More generally, the clock could trigger an interrupt every 1000ms/x where x is the time of the clock
 
   12. The internet is a WAN
+
+* Exercises
+
+  13. In a multiprogramming and time-sharing environment, system sharing can result in various security problems.
+
+      1. What are two such problems?
+
+      One process maliciously modifying another or accessing/changing the memory another is using.
+      One process hogging/using all of the resources.
+
+      2. Can we ensure the same degree of security in a time-shared machine as in a dedicated machine?
+
+      No. There is a history of issues where users can escalate the level at which their processes execute giving them greater control over the machine.
+
+  14. -
